@@ -17,7 +17,6 @@
   "license": "ISC",
   "types": "index.d.ts",
   "dependencies": {
-    "@playwright/cli": "^0.1.1",
     "node-global-key-listener": "^0.3.0",
     "restler": "^3.4.0"
   },
@@ -29,14 +28,8 @@
     "index.d.ts",
     "README.md",
     "doc.md",
-    "WindowsDriver.exe",
-    "WindowsTool.exe",
-    "WindowsAccessBridge-64.dll",
     "scripts/"
   ],
-  "devDependencies": {
-    "@playwright/test": "^1.58.2"
-  },
   "keywords": [
     "windows",
     "automation",

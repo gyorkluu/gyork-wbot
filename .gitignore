@@ -33,3 +33,5 @@ package-lock.json
 docs/
 scripts/RELEASE-GUIDE.md
 scripts/release.bat
+scripts/upload-gitee-release.js
+scripts/upload-release.js
