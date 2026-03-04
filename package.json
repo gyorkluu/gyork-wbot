@@ -1,0 +1,56 @@
+{
+  "name": "gyork-wbot",
+  "version": "1.0.9",
+  "description": "Windows automation bot library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node scripts/download-deps.js",
+    "install-deps": "node scripts/download-deps.js",
+    "check-deps": "node scripts/check-deps.js"
+  },
+  "bin": {
+    "gyork-wbot-install": "./scripts/download-deps.js",
+    "gyork-wbot-check": "./scripts/check-deps.js"
+  },
+  "author": "gyorkluu",
+  "license": "ISC",
+  "types": "index.d.ts",
+  "dependencies": {
+    "@playwright/cli": "^0.1.1",
+    "node-global-key-listener": "^0.3.0",
+    "restler": "^3.4.0"
+  },
+  "optionalDependencies": {
+    "adm-zip": "^0.5.10"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "doc.md",
+    "WindowsDriver.exe",
+    "WindowsTool.exe",
+    "WindowsAccessBridge-64.dll",
+    "scripts/"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  },
+  "keywords": [
+    "windows",
+    "automation",
+    "bot",
+    "rpa",
+    "ffmpeg",
+    "opencv"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gyorkluu/gyork-wbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gyorkluu/gyork-wbot/issues"
+  },
+  "homepage": "https://github.com/gyorkluu/gyork-wbot#readme"
+}

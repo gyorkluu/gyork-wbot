@@ -1,0 +1,39 @@
+# 开发依赖和测试文件
+node_modules/
+tests/
+test-results/
+*.spec.js
+test.js
+
+# 大型 DLL 文件（通过 postinstall 下载）
+avcodec-61.dll
+avfilter-10.dll
+avformat-61.dll
+avutil-59.dll
+swscale-8.dll
+swresample-5.dll
+postproc-58.dll
+opencv_world470.dll
+
+# 下载的 zip 包
+*.zip
+
+# 锁文件（发布时不需要）
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Git 相关
+.git/
+.gitignore
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 其他
+*.log
+.DS_Store
+Thumbs.db
