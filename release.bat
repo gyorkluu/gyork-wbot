@@ -1,52 +1,52 @@
 @echo off
-chcp 65001
+chcp 65001 >nul
 echo ========================================
-echo   gyork-wbot 依赖打包上传脚本
+echo   gyork-wbot Release Script
 echo ========================================
 echo.
 
-:: 设置版本号
+:: Version
 set VERSION=v1.0.0
 
-:: 设置仓库信息
+:: Repository
 set GITHUB_REPO=ghn9264/gyork-wbot-deps
 set GITEE_REPO=ghn9264/gyork-wbot-deps
 
-:: 切换到脚本目录
+:: Change to script directory
 cd /d "%~dp0"
 
-:: 步骤1: 打包依赖文件
+:: Step 1: Pack dependencies
 echo.
-echo [步骤1] 打包依赖文件...
+echo [Step 1] Packing dependencies...
 echo.
 node scripts/pack-deps.js
 if %errorlevel% neq 0 (
-    echo 打包失败！
+    echo Pack failed!
     pause
     exit /b 1
 )
 
-:: 步骤2: 上传到 GitHub Releases
+:: Step 2: Upload to GitHub Releases
 echo.
-echo [步骤2] 上传到 GitHub Releases...
+echo [Step 2] Uploading to GitHub Releases...
 echo.
 node scripts/upload-release.js
 if %errorlevel% neq 0 (
-    echo GitHub上传失败，请检查 gh CLI 是否已安装并登录
-    echo 可以手动上传到 Gitee
+    echo GitHub upload failed. Please check if gh CLI is installed and logged in.
+    echo You can manually upload to Gitee.
 )
 
-:: 步骤3: 提交代码更改
+:: Step 3: Commit and push changes
 echo.
-echo [步骤3] 提交代码更改...
+echo [Step 3] Committing and pushing changes...
 echo.
 git add scripts/download-deps.js scripts/upload-release.js
-git commit -m "chore: 更新依赖版本至 %VERSION%"
+git commit -m "chore: update dependencies to %VERSION%"
 git push gitee main
 
 echo.
 echo ========================================
-echo   所有操作完成！
+echo   All operations completed!
 echo ========================================
 echo.
 echo GitHub Release: https://github.com/%GITHUB_REPO%/releases/tag/%VERSION%
