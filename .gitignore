@@ -29,3 +29,7 @@ tests/
 
 # Lock files (optional, keep pnpm-lock.yaml)
 package-lock.json
+
+docs/
+scripts/RELEASE-GUIDE.md
+scripts/release.bat
