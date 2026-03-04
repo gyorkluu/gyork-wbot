@@ -6,7 +6,7 @@ echo ========================================
 echo.
 
 :: Version
-set VERSION=v1.0.0
+set VERSION=v1.0.10
 
 :: Repository
 set GITHUB_REPO=ghn9264/gyork-wbot-deps

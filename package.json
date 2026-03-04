@@ -1,6 +1,6 @@
 {
   "name": "gyork-wbot",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Windows automation bot library",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "check-deps": "node scripts/check-deps.js"
   },
   "bin": {
-    "gyork-wbot-install": "./scripts/download-deps.js",
-    "gyork-wbot-check": "./scripts/check-deps.js"
+    "gyork-wbot-install": "scripts/download-deps.js",
+    "gyork-wbot-check": "scripts/check-deps.js"
   },
   "author": "gyorkluu",
   "license": "ISC",
