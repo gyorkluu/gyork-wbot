@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT_DIR = path.join(__dirname, '..');
-const VERSION = 'v1.0.0';
+const VERSION = 'v1.0.9';
 
 const FILES = [
   'ffmpeg-deps.zip',
