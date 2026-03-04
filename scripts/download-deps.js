@@ -18,11 +18,11 @@ const { URL } = require('url');
 
 // GitHub Release 地址
 const GITHUB_RELEASE_URL = process.env.GYORK_WBOT_GITHUB_MIRROR ||
-  'https://github.com/ghn9264/gyork-wbot/releases/download/v1.0.0';
+  'https://github.com/ghn9264/gyork-wbot-deps/releases/download/v1.0.0';
 
 // Gitee Release 地址（备用源）
 const GITEE_RELEASE_URL = process.env.GYORK_WBOT_GITEE_MIRROR ||
-  'https://gitee.com/ghn9264/gyork-wbot/releases/download/v1.0.0';
+  'https://gitee.com/ghn9264/gyork-wbot-deps/releases/download/v1.0.0';
 
 // 自定义镜像源（优先级最高）
 const CUSTOM_MIRROR_URL = process.env.GYORK_WBOT_MIRROR;

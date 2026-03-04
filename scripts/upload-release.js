@@ -22,11 +22,11 @@ const FILES = [
 ];
 
 // GitHub 配置
-const GITHUB_REPO = 'ghn9264/gyork-wbot';
+const GITHUB_REPO = 'ghn9264/gyork-wbot-deps';
 const GITHUB_URL = `https://github.com/${GITHUB_REPO}/releases/download/${VERSION}`;
 
 // Gitee 配置
-const GITEE_REPO = 'ghn9264/gyork-wbot';
+const GITEE_REPO = 'ghn9264/gyork-wbot-deps';
 const GITEE_URL = `https://gitee.com/${GITEE_REPO}/releases/download/${VERSION}`;
 
 function exec(cmd, options = {}) {
